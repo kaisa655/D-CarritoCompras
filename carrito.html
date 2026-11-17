@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi carrito</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mi carrito de compras</h1>
+    <p id="saludo"></p>
+    <nav>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Mi carrito (<span id="contador">0</span>)</a>
+      <button id="cerrar-sesion" class="link-boton" type="button">Cerrar sesión</button>
+    </nav>
+  </header>
+  <main class="contenedor">
+    <h2>Productos agregados</h2>
+    <p id="mensaje" class="mensaje" aria-live="polite"></p>
+    <div class="tabla-contenedor">
+      <table>
+        <thead><tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th><th>Acciones</th></tr></thead>
+        <tbody id="filas-carrito"></tbody>
+      </table>
+    </div>
+    <h2 id="total" class="total">Total: $0.00</h2>
+    <a class="boton-enlace" href="productos.html">Seguir comprando</a>
+    <button id="finalizar" class="finalizar" type="button">Finalizar compra</button>
+    <p class="nota">Demostración estática: no procesa pagos ni modifica inventario en MySQL.</p>
+  </main>
+  <footer>Carrito de compras - Proyecto académico</footer>
+</body>
+</html>

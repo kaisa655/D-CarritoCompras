@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos disponibles</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Tienda Virtual</h1>
+    <p id="saludo"></p>
+    <nav>
+      <a href="productos.html">Productos</a>
+      <a href="carrito.html">Mi carrito (<span id="contador">0</span>)</a>
+      <button id="cerrar-sesion" class="link-boton" type="button">Cerrar sesión</button>
+    </nav>
+  </header>
+  <main class="contenedor">
+    <h2>Productos disponibles</h2>
+    <p id="mensaje" class="mensaje" aria-live="polite"></p>
+    <section id="productos" class="productos"></section>
+  </main>
+  <footer>Carrito de compras - Proyecto académico</footer>
+</body>
+</html>
