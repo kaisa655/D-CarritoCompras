@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    color: #333;
+    line-height: 1.5;
+}
+
+header {
+    background: #283747;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #85c1e9;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h2 {
+    margin-bottom: 20px;
+}
+
+.login {
+    max-width: 450px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.login p {
+    margin: 12px 0;
+}
+
+form {
+    margin-top: 15px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+input {
+    min-width: 65px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input {
+    width: 100%;
+}
+
+button,
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2874a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.boton-enlace:hover {
+    background: #1b4f72;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.producto h3 {
+    margin-bottom: 10px;
+}
+
+.precio {
+    margin: 10px 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #2874a6;
+}
+
+.producto form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #283747;
+    color: white;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.eliminar {
+    background: #c0392b;
+}
+
+.eliminar:hover {
+    background: #922b21;
+}
+
+.total {
+    text-align: right;
+    margin: 25px 0;
+    color: #2874a6;
+}
+
+.mensaje {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    color: #922b21;
+    background: #fadbd8;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 6px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}

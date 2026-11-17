@@ -1,0 +1,33 @@
+PROYECTO: CARRITO DE COMPRAS CON SESIONES PHP
+
+Requisitos:
+- XAMPP instalado.
+- Apache iniciado desde el panel de control de XAMPP.
+- Navegador web.
+
+Instalación:
+1. Extrae la carpeta CarritoCompras dentro de:
+   C:\xampp\htdocs\
+2. Abre el panel de XAMPP e inicia Apache.
+3. En el navegador visita:
+   http://localhost/CarritoCompras/
+
+Uso:
+1. Escribe tu nombre para iniciar sesión.
+2. En Productos puedes agregar artículos y cantidades.
+3. En Mi carrito puedes consultar, actualizar o eliminar artículos.
+4. Cerrar sesión termina la sesión y vacía los datos guardados.
+
+Archivos principales:
+- index.php: inicio de sesión del usuario.
+- datos.php: catálogo de productos.
+- productos.php: muestra el catálogo.
+- agregar.php: agrega artículos a la sesión.
+- carrito.php: lista los artículos y calcula el total.
+- modificar.php: actualiza cantidades.
+- eliminar.php: retira artículos.
+- cerrar_sesion.php: finaliza la sesión.
+- css/estilos.css: estilos visuales.
+
+Nota:
+Los productos y el carrito se almacenan en la sesión de PHP; no se utiliza una base de datos.
